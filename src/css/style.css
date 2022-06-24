@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@400;700;800&display=swap');
+
+:root {
+    --font-padrao: Poppins;
+    --font-nomes: Inter;
+    --corpadrao: rgba(52,0,77,1);;
+    --corprimaria: rgba(159,0,226,1);
+    --corsecundaria: rgba(236.36,0,241.19,1);
+    --corbotao: rgba(229,103,0,1);
+    --corfonte: #fce6ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-padrao);
+    box-sizing: border-box;
+}
+
+/*Estilos Gerais*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+    color: var(--corfonte);
+}
+
+#container, #fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.acessibilidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.acessibilidade img {
+    width: 50px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.titulo {
+    display: inline-block;
+    font: bold 30px var(--font-padrao);
+    color: var(--corfonte);
+    line-height: 38px;
+    text-shadow: 2px 1px 4px rgb(0 0 0 / 50%);
+}
+
+p {
+    font: 19px var(--font-padrao);
+    color: var(--corfonte);
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+    justify-content: normal;
+    align-items: left;
+}
+
+/*Cabeçalho de Navegação ESTÁ OK*/
+header {
+    background-color: var(--corpadrao);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+#navbar {
+    background-color: var(--corpadrao);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#navbar a {
+    color: var(--corfonte);
+    width: 8em;
+    font: 1rem var(--font-padrao);
+    text-align: center;
+}
+
+/*Corpo principal da página ESTÁ OK*/
+body {
+    background-image: linear-gradient(to bottom, rgba(159,0,226,1) 14%, rgba(236.36,0,241.19,1) 33%, rgba(159,0,226,1) 59%, rgba(85.88,0,226,0.63) 79%, rgba(159,0,226,1) 100%);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fundo {
+   padding: 10px;
+   background: url(/src/img/backgraoundvozlibras.png) repeat;
+   
+}
+
+/*Seção da introdução do site ESTÁ OK*/
+#introducao{
+    display: block;
+    align-items: flex-start;
+    margin-bottom: -150px;
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+}
+
+.avatar {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.introducao {
+    align-items: center;
+    margin: 80px 0px;
+}
+
+
+.botaos {
+    vertical-align: left;
+}
+
+.botao button {
+    border: none;
+    border-radius: 100px;
+    background-color: var(--corbotao);
+    color: var(--corfonte);
+    font: bold 1.6vw var(--font-padrao);
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Seção SOBRE ESTÁ OK*/
+#sobre {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#sobre .container {
+    display: flex;
+    align-items: center;
+}
+
+.container .sobreimg {
+   width: 50%;
+}
+
+/*Sub-Seção VALORES ESTÁ OK*/
+#valores {
+    margin: 40px 0px 50px;
+}
+
+.valores ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.valores li {
+    background-color: rgba(102,207,0,1);
+    border-radius: 20px;
+    padding: 15px 20px;
+    font: bold 20px var(--font-padrao);
+    color: rgba(52,0,77,1);
+    margin: 10px 05px;
+    width: 240px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*Seção TECNOLOGIA ESTÁ OK*/
+#tecnologia {
+    display: flex;
+    flex-direction: column;
+}
+
+#tecnologia .txt {
+    margin: 10px;
+    padding: 10px;
+}
+
+.sobretxt {
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.imgtec1, .imgtec2 {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/*Seção PLANOS ESTÁ OK*/
+#planos {
+    margin-top: 20px;
+}
+
+.blocos {
+    color: #34004D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 35px 0px;
+}
+
+.bloco h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.bloco h4 {
+    font-size: 20px;
+}
+
+.bloco li {
+    font-size: 16px;
+    text-align: left;
+}
+.bloco {
+    background-color: rgba(102,207,0,1);
+    border-radius: 30px;
+    width: 280px;
+    height: 350px;
+    padding: 15px 45px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+/*Seção EQUIPE*/
+#equipe {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.txt {
+    width: 100%;
+}
+
+.equipe {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.membro {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.membro img {
+    width: 100px;
+    height: 100px;
+}
+
+.membro .nome {
+    font-weight: bold;
+    color: var(--corfonte);
+    font-size: 1rem;
+}
+
+.membro .funcao {
+    font-size: 0.8rem;
+    color: var(--corfonte);
+}
+
+/*Seção PARCERIAS*/
+#parcerias {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.logoparceiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logoparceiros img {
+    width: 50%;
+    justify-content: center;
+    margin: 10px;
+}
+
+.imgparceiro1 {
+    width: 100%;
+}
+
+.imgparceiro2 {
+    max-width: 70%;
+}
+
+/*Footer do site ESTÁ OK*/
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--corpadrao);
+    color: #9F00E2;
+    width: 100%;
+
+}
+
+footer #container {
+    flex-direction: column;
+    width: 100%;
+}
+
+.midiasocial, .contato, .logofooter {
+    width: 33%;
+}
+
+.sitefooter {
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.midiasocial img {
+    width: 3vw;
+}
+
+.logofooter img {
+    width: 100%;
+}
+
+.midiasocial li {
+    display: inline-block;
+    padding: 5px;
+    list-style: none;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 1rem;
+}
