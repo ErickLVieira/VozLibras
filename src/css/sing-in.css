@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@400;700;800&display=swap');
+
+:root {
+    --font-padrao: Poppins;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-padrao);
+}
+
+a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+    color: var(--corfonte);
+    cursor: pointer;
+}
+
+body {
+    background: linear-gradient(180deg, #9F00E2 0%, #b400e0 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fundo {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.logo {
+    width: 100%;
+    position: relative;
+    top: -100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    max-width: 400px;
+    position: relative;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.txt-box {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #ffffff00;
+}
+
+
+input::placeholder {
+    color: white;
+}
+
+.underline {
+    width: 100%;
+    background-color: #34004D;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 0.7em;
+    font-style: italic;
+    width: 100%;
+    text-align: right;
+    color: white;
+}
+
+.check-box {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 0.7em;
+    font-style: italic;
+    width: 100%;
+    text-align: right;
+    color: white;
+}
+
+.botao-tipo1 {
+    border-radius: 15px;
+    padding: 5px 90px;
+    border: none;
+    background-color: #34004D;
+    color: white;
+    font-family: var(--font-padrao);
+    font-weight: 400;
+    cursor: pointer;
+}

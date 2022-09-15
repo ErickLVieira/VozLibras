@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@400;700;800&display=swap');
+
+:root {
+    --font-padrao: Poppins;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-padrao);
+}
+
+body {
+    background: linear-gradient(180deg, #9F00E2 0%, #b400e0 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .fundo {
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+}
+
+.carregando {
+    position: relative;
+}
+
+.carregando img {
+    height: 15vh;
+}
+
