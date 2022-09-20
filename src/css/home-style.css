@@ -241,6 +241,7 @@ body {
 /*Seção PLANOS*/
 #planos {
     margin-top: 60px;
+    display: none;
 }
 .planostxt p{
     font-size: 25px;

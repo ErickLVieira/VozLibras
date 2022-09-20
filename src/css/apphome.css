@@ -71,6 +71,11 @@ main {
     bottom: 5rem;
 }
 
+.opcao-traducao button {
+    background: none;
+    border: none;
+}
+
 .form {
     display: flex;
     flex-direction: column;

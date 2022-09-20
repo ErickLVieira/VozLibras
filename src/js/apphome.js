@@ -26,4 +26,11 @@ botaoSinal.forEach(botaosinal => {
 const btTraduzir = document.getElementById("enviar")
 btTraduzir.addEventListener('click', () => {
     alert("Sinal não cadastrado!")
-})
+});
+
+
+/*addEventListener.click('click', () =>{    
+    const btCamera = document.getElementsByClassName("camera");
+    const btVoz = document.getElementsByClassName("voz");
+        alert("Area em construção!")
+});*/
