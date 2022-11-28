@@ -60,10 +60,6 @@
         font-size: 0.7rem;
     }
 
-    .equipe {
-        padding: 0;
-    }
-
     .equipetxt {
         padding: 0px;
         width: auto;
@@ -125,6 +121,7 @@
         align-items: flex-start;
         width: 100%;
         flex-wrap: wrap;
+        margin-top: 20px;
     }
     
     .midiasocial img {

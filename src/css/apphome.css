@@ -23,7 +23,6 @@ body {
     height: 100%;
     min-height: 770px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -32,13 +31,11 @@ body {
     top: 10px;
 }
 
+/* Area de exibição da avatar Julia */
+
 main {
     max-width: 450px;
-    height: 800px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .container {
@@ -74,6 +71,7 @@ main {
 .opcao-traducao button {
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .form {
@@ -133,6 +131,8 @@ svg {
     top: 0px;
 }
 
+/* Area de navegação */
+
 h1 {
     color: #FCE6FF80;;
     text-shadow: 1px 1px 10px #fce6ff80;
@@ -144,6 +144,8 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 450px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .botoessinal input {
